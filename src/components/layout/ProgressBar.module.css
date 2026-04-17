@@ -1,0 +1,41 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.track {
+  width: 100%;
+  height: 8px;
+  background-color: var(--color-border-default);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: var(--border-radius-pill);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background-color: var(--color-indicator);
+  transition: width 0.4s ease-in-out;
+  border-radius: var(--border-radius-pill);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    position: relative;
+  }
+
+  .track {
+    position: static;
+    height: 4px;
+    border-radius: 0;
+    background-color: var(--color-border-default);
+  }
+
+  .fill {
+    border-radius: 0;
+  }
+}

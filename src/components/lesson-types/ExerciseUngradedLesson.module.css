@@ -1,0 +1,57 @@
+.article {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: var(--space-xl);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.lessonType {
+  font-size: var(--text-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-raised);
+  padding: 2px var(--space-sm);
+  border-radius: var(--border-radius-pill);
+}
+
+.duration {
+  font-size: var(--text-size-xs);
+  color: var(--color-text-tertiary);
+}
+
+.title {
+  font-size: var(--text-size-2xl);
+  font-weight: 700;
+  line-height: var(--line-height-tight);
+}
+
+.body {
+  margin-bottom: var(--space-xl);
+}
+
+.exerciseSection {
+  background-color: var(--color-surface-card);
+  border: var(--border-width-thin) solid var(--color-border-default);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.prompt {
+  font-size: var(--text-size-md);
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+  line-height: var(--line-height-base);
+}

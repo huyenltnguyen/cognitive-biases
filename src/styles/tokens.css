@@ -1,0 +1,122 @@
+:root {
+  --color-brand-primary: #0a0a23;
+  --color-brand-secondary: #f5f6f7;
+  --color-brand-accent: #d0d0d5;
+  --color-brand-highlight: #f1be32;
+  --color-brand-interactive: #99c9ff;
+
+  --color-surface-base: #ffffff;
+  --color-surface-card: #f5f6f7;
+  --color-surface-raised: #dfdfe2;
+  --color-surface-overlay: rgba(10, 10, 35, 0.85);
+
+  --color-text-primary: #0a0a23;
+  --color-text-secondary: #2a2a40;
+  --color-text-tertiary: #3b3b4f;
+  --color-text-inverse: #f5f6f7;
+  --color-text-interactive: #002ead;
+
+  --color-accent-purple: #dbb8ff;
+  --color-accent-yellow: #f1be32;
+  --color-accent-yellow-light: #e0a800;
+  --color-accent-blue: #99c9ff;
+  --color-accent-green: #acd157;
+  --color-accent-red: #ffadad;
+
+  --color-accent-purple-dark: #5a01a7;
+  --color-accent-yellow-dark: #4d3800;
+  --color-accent-blue-dark: #002ead;
+  --color-accent-green-dark: #00471b;
+  --color-accent-red-dark: #850000;
+
+  --color-state-success-bg: #e4f8ce;
+  --color-state-success-border: #00471b;
+  --color-state-success-text: #00471b;
+  --color-state-error-bg: #ffe3e3;
+  --color-state-error-border: #850000;
+  --color-state-error-text: #850000;
+  --color-state-neutral-bg: #e5e5e9;
+  --color-state-neutral-border: #3b3b4f;
+  --color-state-neutral-text: #0a0a23;
+  --color-state-locked: #858591;
+
+  --color-focus-ring: #198eee;
+  --color-border-default: #d0d0d5;
+  --color-border-strong: #3b3b4f;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  --font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  --font-family-mono: 'Hack ZeroSlash', 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+
+  --text-size-xs: 0.875rem;
+  --text-size-sm: 1rem;
+  --text-size-md: 1.125rem;
+  --text-size-lg: 1.5rem;
+  --text-size-xl: 2rem;
+  --text-size-2xl: 2.5rem;
+
+  --line-height-tight: 1.25;
+  --line-height-base: 1.5;
+  --line-height-loose: 1.75;
+
+  --border-radius-sm: 0px;
+  --border-radius-md: 2px;
+  --border-radius-lg: 4px;
+  --border-radius-pill: 999px;
+
+  --border-width-thin: 1px;
+  --border-width-thick: 2px;
+  --border-width-focus: 3px;
+
+  --shadow-sm: 0 1px 2px rgba(10, 10, 35, 0.1);
+  --shadow-md: 0 4px 6px rgba(10, 10, 35, 0.1);
+  --shadow-focus: 0 0 0 var(--border-width-focus) var(--color-focus-ring);
+
+  /* Semantic aliases used by freeCodeCamp/ui mapping */
+  --background-quaternary: var(--color-border-default);
+  --foreground-secondary: var(--color-text-primary);
+}
+
+[data-theme='light'] {
+  --color-surface-base: #ffffff;
+  --color-surface-card: #f5f6f7;
+  --color-surface-raised: #dfdfe2;
+  --color-text-primary: #0a0a23;
+  --color-text-secondary: #2a2a40;
+  --color-text-tertiary: #3b3b4f;
+  --color-border-default: #d0d0d5;
+  --color-border-strong: #3b3b4f;
+  --color-state-neutral-bg: #e5e5e9;
+  --background-quaternary: var(--color-border-default);
+  --foreground-secondary: var(--color-text-primary);
+  --color-indicator: #005bb5;
+}
+
+[data-theme='dark'] {
+  --color-surface-base: #0a0a23;
+  --color-surface-card: #1b1b32;
+  --color-surface-raised: #2a2a40;
+  --color-text-primary: #f5f6f7;
+  --color-text-secondary: #dfdfe2;
+  --color-text-tertiary: #858591;
+  --color-border-default: #3b3b4f;
+  --color-border-strong: #858591;
+  --color-state-neutral-bg: #2a2a40;
+  --color-state-success-bg: #1f3a1c;
+
+  --background-quaternary: var(--color-border-default);
+  --foreground-secondary: var(--color-text-inverse);
+
+  --color-text-interactive: #99c9ff;
+  --color-brand-highlight: #99c9ff;
+  --color-brand-interactive: #99c9ff;
+  --color-indicator: #99c9ff;
+}

@@ -1,0 +1,61 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.exerciseArea {
+  min-height: 120px;
+  padding-bottom: var(--space-lg);
+  border-bottom: var(--border-width-thin) solid var(--color-border-default);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.submitButton {
+  border-color: var(--foreground-primary);
+}
+
+.continueArrow {
+  margin-left: var(--space-xxs);
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: var(--foreground-primary);
+  color: var(--foreground-secondary);
+  border-color: var(--foreground-primary);
+}
+
+.attemptsInfo {
+  font-size: var(--text-size-xs);
+  color: var(--color-text-tertiary);
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.ungradedConfirm {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-state-neutral-bg);
+  border-radius: var(--border-radius-md);
+  font-size: var(--text-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.buttonGroup {
+  margin-left: auto;
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.reflectionPrompt {
+  font-size: var(--text-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.reflectionPrompt p {
+  margin: 0;
+}

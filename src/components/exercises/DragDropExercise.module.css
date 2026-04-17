@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.instructions {
+  font-size: var(--text-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+@media (max-width: 600px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sectionLabel {
+  font-size: var(--text-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-tertiary);
+  margin-bottom: var(--space-md);
+}
+
+.itemsList,
+.targetsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.draggableItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface-card);
+  border: var(--border-width-thick) solid var(--color-border-default);
+  border-radius: var(--border-radius-lg);
+  cursor: grab;
+  user-select: none;
+  font-size: var(--text-size-sm);
+  transition: border-color 0.15s, box-shadow 0.15s;
+  touch-action: none;
+}
+
+.draggableItem:hover:not(.itemDisabled):not(.placed) {
+  border-color: var(--color-brand-interactive);
+  box-shadow: var(--shadow-sm);
+}
+
+.draggableItem:focus-visible {
+  outline: var(--border-width-focus) solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+.dragging {
+  cursor: grabbing;
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-brand-interactive);
+  opacity: 0.9;
+  z-index: 50;
+}
+
+.placed {
+  opacity: 0.4;
+  cursor: default;
+  border-style: dashed;
+}
+
+.itemDisabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.dragHandle {
+  color: var(--color-text-tertiary);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.droppableTarget {
+  min-height: 64px;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface-base);
+  border: var(--border-width-thick) dashed var(--color-border-default);
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.dropOver {
+  border-color: var(--color-brand-interactive);
+  background-color: var(--color-state-success-bg);
+  border-style: solid;
+}
+
+.filled {
+  border-style: solid;
+  border-color: var(--color-brand-interactive);
+  background-color: var(--color-surface-card);
+}
+
+.targetLabel {
+  font-size: var(--text-size-xs);
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.emptyHint {
+  font-size: var(--text-size-xs);
+  color: var(--color-text-tertiary);
+  font-style: italic;
+}
+
+.placedItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--color-state-neutral-bg);
+  border-radius: var(--border-radius-md);
+  font-size: var(--text-size-sm);
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-tertiary);
+  font-size: var(--text-size-md);
+  line-height: 1;
+  padding: 0 var(--space-xs);
+  border-radius: var(--border-radius-sm);
+  flex-shrink: 0;
+}
+
+.removeBtn:hover {
+  color: var(--color-state-error-text);
+}
+
+.removeBtn:focus-visible {
+  outline: var(--border-width-focus) solid var(--color-focus-ring);
+  outline-offset: 2px;
+}

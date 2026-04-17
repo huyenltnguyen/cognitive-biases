@@ -1,0 +1,27 @@
+export type {
+  LessonType,
+  ExerciseKind,
+  LessonFrontmatterBase,
+  ReadingLessonFrontmatter,
+  BridgeLessonFrontmatter,
+  ChoiceOption,
+  MultipleChoiceExerciseData,
+  DragDropItem,
+  DragDropTarget,
+  DragDropExerciseData,
+  MatchingPair,
+  MatchingExerciseData,
+  SliderExerciseData,
+  GradedExerciseData,
+  UngradedExerciseData,
+  ExerciseLessonFrontmatter,
+  ExerciseUngradedLessonFrontmatter,
+  LongExerciseLessonFrontmatter,
+  LessonFrontmatter,
+  LessonNode,
+  Module,
+  Part,
+  Course,
+} from './content';
+
+export type { LessonStatus, LessonProgress, ModuleProgress, CourseProgress } from './progress';

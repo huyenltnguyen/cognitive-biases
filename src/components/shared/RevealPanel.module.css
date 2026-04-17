@@ -1,0 +1,40 @@
+.wrapper {
+  margin: var(--space-lg) 0;
+}
+
+.prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-sm);
+}
+
+.prompt {
+  font-weight: 400;
+}
+
+.hint {
+  font-size: var(--text-size-xs);
+  color: var(--color-text-secondary);
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.contentVisible {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

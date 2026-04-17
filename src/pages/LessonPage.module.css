@@ -1,0 +1,22 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: var(--color-surface-base);
+}
+
+.sidebarStack {
+  display: flex;
+  flex-direction: column;
+}
+
+.lessonContent {
+  flex: 1;
+  padding: var(--space-xl) var(--space-xl);
+}
+
+@media (max-width: 768px) {
+  .lessonContent {
+    padding: var(--space-md) var(--space-sm);
+  }
+}

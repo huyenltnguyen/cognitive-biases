@@ -1,0 +1,77 @@
+.wrapper {
+  margin: var(--space-md) 0;
+}
+
+.alert {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--border-radius-lg);
+  border-left: var(--border-width-thick) solid transparent;
+  box-shadow: var(--shadow-sm);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  margin-top: 2px;
+}
+
+.alert svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.success {
+  /* Use exact FreeCodeCamp alert colors for success */
+  background-color: #dff0d8; /* green05 */
+  border-left-color: #d6e9c6; /* green10 */
+  color: #19562a; /* green80 */
+}
+
+.danger {
+  /* Use exact FreeCodeCamp alert colors for danger */
+  background-color: #f2dede; /* red05 */
+  border-left-color: #ebccd1; /* red10 */
+  color: #850000; /* red90 */
+}
+
+.feedbackList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedbackItem {
+  margin: 0;
+  line-height: var(--line-height-base);
+  font-size: var(--text-size-sm);
+  font-weight: 500;
+}
+
+.feedbackItem + .feedbackItem {
+  margin-top: var(--space-xs);
+}
+
+.feedbackItem:first-child {
+  font-weight: 500;
+}
+
+.firstLine {
+  font-weight: 600;
+}
+
+.extraLine {
+  margin-top: var(--space-xs);
+  font-weight: 400;
+}
