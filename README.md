@@ -1,6 +1,12 @@
 # Cognitive Biases Course
 
-An interactive web-based course that teaches learners how cognitive biases shape everyday decisions — and how to counteract them. Built with React, TypeScript, and Vite.
+An interactive web-based course that teaches learners how cognitive biases shape everyday decisions — and how to counteract them.
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
 
 ## Setup
 
@@ -31,3 +37,8 @@ pnpm lint
 # Validate lesson content frontmatter
 pnpm validate:content
 ```
+
+## Deploy to GitHub Pages
+
+This repo is configured to deploy automatically from the `main` branch using GitHub Actions.
+
